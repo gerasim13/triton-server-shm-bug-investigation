@@ -1,0 +1,22 @@
+name: "bls"
+backend: "python"
+max_batch_size: 128
+model_transaction_policy {
+  decoupled: True
+}
+input [
+  {
+    name: "dummy"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+    reshape: { shape: [ ] }
+  }
+]
+output [
+  {
+    name: "dummy"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+    reshape: { shape: [ ] }
+  }
+]

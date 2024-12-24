@@ -1,0 +1,20 @@
+name: "dummy"
+backend: "python"
+max_batch_size: 128
+model_transaction_policy {
+  decoupled: False
+}
+input [
+  {
+    name: "data"
+    data_type: TYPE_UINT8
+    dims: [ -1 ]
+  }
+]
+output [
+  {
+    name: "data"
+    data_type: TYPE_UINT8
+    dims: [ -1 ]
+  }
+]
